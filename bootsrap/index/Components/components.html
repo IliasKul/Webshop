@@ -10,10 +10,10 @@
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
 
   <title>TransIP</title>
 </head>
@@ -127,9 +127,51 @@
       </div>
     </div>
   </header>
+  
+   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <img class="bd-placeholder-img" src="../Components/images/backgroundpcstore2.png" alt="" width="100%" height="auto" style="opacity: 0.65;">
+      <div class="carousel-item active">
+        <img class="AMDLogo" src="../Components/images/Ryzen-AMD-RYZEN-Logo.wine.svg" alt="" height="40%" width="40%">
+        <img class="AMDBox" src="../Components/images/616656-amd-ryzen-7-5000-series-PIB-1260x709_0.webp" alt="" height="195%" width="90%">
+        <div class="container">
+          <div class="carousel-caption text-start">
 
-  <div class="picture">
-    <img src="p" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1 class="text-black">Another example headline.</h1>
+            <p class="text-black">Some representative placeholder content for the second slide of the carousel.</p>
+            <p class="text-black"><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1 class="text-black">One more for good measure.</h1>
+            <p class="text-black">Some representative placeholder content for the third slide of this carousel.</p>
+            <p class="text-black"><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -159,8 +201,8 @@
         <div class="card">
           <div class="card-body artikel">
             <a href="producttypes/cpu/cpu.html" class="stretched-link"></a>
-            <h3>PROCESSOREN</h3>
-            <img src="../Components/images/CPU2.png" alt="300px">
+            <h3 style="font-weight: 600;">PROCESSOREN</h3>
+            <img src="../Components/images/CPU2.png" alt="CPU" style="max-width: 1000px; height: auto; object-fit: contain;">
           </div>
         </div>
       </div>
@@ -168,8 +210,8 @@
         <div class="card">
           <div class="card-body artikel">
             <a href="producttypes/gpu/gpu.html" class="stretched-link"></a>
-            <h3>VIDEOKAARTEN</h3>
-            <img src="../Components/images/GPU2.png" alt="">
+            <h3 style="font-weight: 600">VIDEOKAARTEN</h3>
+            <img src="../Components/images/GPU2.png" alt="" style="max-width: 1000px; height: auto; object-fit: contain;">
           </div>
         </div>
       </div>
@@ -177,8 +219,8 @@
         <div class="card">
           <div class="card-body artikel">
             <a href="producttypes/mobo/mobo.html" class="stretched-link"></a>
-            <h3>MOEDERBORDEN</h3>
-            <img src="../Components/images/MOBO2.png" alt="">
+            <h3 style="font-weight: 600">MOEDERBORDEN</h3>
+            <img src="../Components/images/MOBO2.png" alt="" style="max-width: 1000px; height: auto; object-fit: contain;">
           </div>
         </div>
       </div>
@@ -186,8 +228,8 @@
         <div class="card">
           <div class="card-body artikel">
             <a href="producttypes/ram/ram.html" class="stretched-link"></a>
-            <h3>GEHEUGEN</h3>
-            <img src="../Components/images/RAM.png" alt="">
+            <h3 style="font-weight: 600">GEHEUGEN</h3>
+            <img src="../Components/images/RAM.png" alt="" style="max-width: 1000px; height: auto; object-fit: contain;">
           </div>
         </div>
       </div>
@@ -195,8 +237,8 @@
         <div class="card">
           <div class="card-body artikel">
             <a href="producttypes/case/cases.html" class="stretched-link"></a>
-            <h3>BEHUIZING</h3>
-            <img src="../Components/images/PCCase.png" alt="">
+            <h3 style="font-weight: 600">BEHUIZING</h3>
+            <img src="../Components/images/PCCase.png" alt="" style="max-width: 1000px; height: auto; object-fit: contain;">
           </div>
         </div>
       </div>
@@ -204,8 +246,8 @@
         <div class="card">
           <div class="card-body artikel">
             <a href="producttypes/psu/psu.html" class="stretched-link"></a>
-            <h3>VOEDING</h3>
-            <img src="../Components/images/PSU.png" alt="">
+            <h3 style="font-weight: 600">VOEDING</h3>
+            <img src="../Components/images/PSU.png" alt="" style="max-width: 1000px; height: auto; object-fit: contain;">
           </div>
         </div>
       </div>
@@ -213,8 +255,8 @@
         <div class="card">
           <div class="card-body artikel">
             <a href="producttypes/storage/storage.html" class="stretched-link"></a>
-            <h3>OPSLAG</h3>
-            <img src="../Components/images/Storage.png" alt="">
+            <h3 style="font-weight: 600">OPSLAG</h3>
+            <img src="../Components/images/Storage.png" alt="" style="max-width: 1000px; height: auto; object-fit: contain;">
           </div>
         </div>
       </div>
@@ -222,8 +264,8 @@
         <div class="card">
           <div class="card-body artikel">
             <a href="producttypes/fans/fans.html" class="stretched-link"></a>
-            <h3>KOELING</h3>
-            <img src="../Components/images/Fan.png" alt="">
+            <h3 style="font-weight: 600">KOELING</h3>
+            <img src="../Components/images/Fan.png" alt="" style="max-width: 1000px; height: auto; object-fit: contain;">
           </div>
         </div>
       </div>
@@ -231,8 +273,8 @@
         <div class="card">
           <div class="card-body artikel">
             <a href="producttypes/rgb/rgb.html" class="stretched-link"></a>
-            <h3>VERLICHTING</h3>
-            <img src="../Components/images/RGB.png" alt="">
+            <h3 style="font-weight: 600">VERLICHTING</h3>
+            <img src="../Components/images/RGB.png" alt="" style="max-width: 1000px; height: auto; object-fit: contain;">
           </div>
         </div>
       </div>
@@ -307,6 +349,7 @@
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
